@@ -32,7 +32,7 @@ bot.onText(/\/help/, (msg) => {
 	const firstName = msg.from.first_name
 
 	const response =
-		'Welcome to Instgram Downloady !'+ firstName +'\nSend a valid Instagram or Youtube link to download the content.'
+		'Welcome to Instgram Downloady! '+ firstName +'\nSend a valid Instagram or Youtube link to download the content.'
 
 	bot.sendMessage(chatId, response)
 })
