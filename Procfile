@@ -1,1 +1,1 @@
-web: npm start
+"start": "node bot.js"
