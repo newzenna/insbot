@@ -1,0 +1,6 @@
+{
+  "name": "Insbot",
+  "description": "Insbot",
+  "keywords": ["node", "mongodb", "heroku"],
+  "image": "heroku/nodejs"
+}
