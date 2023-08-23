@@ -55,7 +55,7 @@ bot.onText(/\/start/, async (msg) => {
    		console.error(error);
    	}
 	const response =
-		'Welcome to Downloady! \nSend a valid Instagram or Youtube link to download the content. /help'
+		'Welcome to instagram Downloady! \nSend a valid Instagram or Youtube link to download the content. /help'
 
 	bot.sendMessage(chatId, response)
 })
