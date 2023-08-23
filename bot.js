@@ -179,6 +179,6 @@ app.get("/", (req, res) => {
   res.render("Landing");
 });
 
-app.listen(3001 || process.env.PORT, '0.0.0.0', () => {
+app.listen(3000 || process.env.PORT, '0.0.0.0', () => {
   console.log("Server is running.");
 });
