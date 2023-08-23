@@ -32,7 +32,7 @@ bot.onText(/\/help/, (msg) => {
 	const firstName = msg.from.first_name
 
 	const response =
-		'Hi '+ firstName +',\nWelcome to Instgram Downloady!\nSend a valid Instagram or Youtube link to download the content.'
+		'Hi '+ firstName +',\nWelcome to Instgram Downloady!\nSend a valid Instagram or Youtube link to download the content.\n /help'
 
 	bot.sendMessage(chatId, response)
 })
@@ -56,7 +56,7 @@ bot.onText(/\/start/, async (msg) => {
    		console.error(error);
    	}
 	const response =
-		'Hi '+ firstName +',\nWelcome to instagram Downloady! \nSend a valid Instagram or Youtube link to download the content. /help'
+		'Hi '+ firstName +',\nWelcome to instagram Downloady! \nSend a valid Instagram or Youtube link to download the content.\n /help'
 
 	bot.sendMessage(chatId, response)
 })
