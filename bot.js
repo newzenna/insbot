@@ -1,7 +1,5 @@
 /* required to disable the deprecation warning, 
 will be fixed when node-telegram-bot-api gets a new update */
-const express = require("express");
-const app = express();
 const { MongoClient } = require('mongodb')
 require('dotenv').config()
 process.env['NTBA_FIX_350'] = 1
@@ -175,10 +173,3 @@ bot.onText(
 	}
 )
 
-app.get("/", (req, res) => {
-  res.render("Landing");
-});
-
-app.listen(3000 || process.env.PORT, '0.0.0.0', () => {
-  console.log("Server is running.");
-});
