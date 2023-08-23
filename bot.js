@@ -40,6 +40,7 @@ bot.onText(/\/help/, (msg) => {
 // start
 bot.onText(/\/start/, async (msg) => {
 	const chatId = msg.chat.id
+	const firstName = msg.from.first_name
 	try{
 		const database = client.db("insertDB");
 	    const instadb = database.collection("instadb");
