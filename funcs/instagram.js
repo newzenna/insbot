@@ -1,6 +1,6 @@
 const ig = require('instagram-url-dl')
 
-function downloadFromInstagram(bot, chatId, url) {
+function downloadFromInstagram(bot, chatId, url ,messageId) {
 	ig(url)
 		.then((res) => {
 			bot.sendMessage(chatId, 'Downloading...').catch((err) => {
@@ -42,11 +42,16 @@ function downloadFromInstagram(bot, chatId, url) {
 						console.log(err)
 					})
 				} else if (res.data[0].type === 'video') {
-					bot.sendVideo(chatId, res.data[0].url).catch((err) => {
+					const fullon = res.data[0].url
+					const messageIdy = {
+										reply_to_message_id: messageId
+										}
+					bot.sendVideo(chatId, fullon,messageIdy).catch((err) => {
 						bot.sendMessage(chatId, 'Error sending video').catch(
 							(err) => {
 								console.log(err)
-							}
+							},
+							
 						)
 						console.log(err)
 					})
