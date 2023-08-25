@@ -112,7 +112,6 @@ bot.onText(/\/start/, async (msg) => {
 bot.on('callback_query', function onCallbackQuery(callbackQuery) { 
    const action = callbackQuery.data; 
    const msg = callbackQuery.message; 
-   console.log(msg)
    const firstName = msg.chat.first_name;
    const chatId = msg.chat.id
    const response =
